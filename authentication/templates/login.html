@@ -15,18 +15,27 @@
     </div>
     <div class="login-box">
         <h1>Log in</h1>
-        <fieldset class="login-info">
-            <label id="username">Username:
-                <input type="text" name="username">
-            </label>
-            <label id="password">Password:
-                <input type="password" name="password">
-            </label>
-        </fieldset>
-        <br>
-        <button type="submit" id="#link-button">Login</button>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div>
+                <label for="username">Username:</label>
+                <input type="text"  name="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password"  name="password" required>
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
+        </form>
         <p>New user? Create an account. <a href="signup.html">Sign up</a>
     </div>
     
+    {% if messages %}
+        {% for message in messages %}
+            {{message}}
+        {% endfor %}
+    {%endif%}
 </body>
 </html>
