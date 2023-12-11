@@ -1,9 +1,11 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
+    <link href="{% static 'styles.css' %}" rel="stylesheet">
     <title>RansomAware Sign up</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
             <label id="password">Password: <input type="password" name="password"></label>
             <label id="repassword">Re-enter Password: <input type="password" name="repassword"></label>
         </fieldset> 
-        <button type="submit" id="signup-button"><a href="login.html" id="#link-button">Sign up</a></button>
+        <button type="submit" id="signup-button"><a href="login" id="#link-button">Sign up</a></button>
     </div>
 </body>
 </html>
