@@ -19,3 +19,7 @@ def login_user(request):
             return redirect('login')
     else:
         return render(request, 'login.html', {})
+
+
+def signup(request):
+    return render(request, 'signup.html', {})
