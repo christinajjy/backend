@@ -23,3 +23,6 @@ def login_user(request):
 
 def signup(request):
     return render(request, 'signup.html', {})
+
+def login_return(request):
+    return redirect ('login')

@@ -1,9 +1,11 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
+    <link href="{% static 'styles.css' %}" rel="stylesheet">
     <title>RansomAware Login</title>
 </head>
 <body>
@@ -29,7 +31,7 @@
                 <input type="submit" value="Login">
             </div>
         </form>
-        <p>New user? Create an account. <a href="signup.html">Sign up</a>
+        <p>New user? Create an account. <a href="signup">Sign up</a>
     </div>
     
     {% if messages %}
