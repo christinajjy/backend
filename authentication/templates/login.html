@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'styles.css' %}" rel="stylesheet">
+    <title>RansomAware Login</title>
+</head>
+<body>
+    <div class="side-bar">
+        <h1>RansomAware</h1>
+        <p>Provide training and preparedness for the 
+            employees to prevent future ransomware attacks against the 
+            company.</p>
+    </div>
+    <div class="login-box">
+        <h1>Log in</h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div>
+                <label for="username">Username:</label>
+                <input type="text"  name="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password"  name="password" required>
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
+        </form>
+        <p>New user? Create an account. <a href="signup">Sign up</a>
+    </div>
+    
+    {% if messages %}
+        {% for message in messages %}
+            {{message}}
+        {% endfor %}
+    {%endif%}
+</body>
+</html>
