@@ -1,7 +1,8 @@
-from django.contrib import admin
-from django.urls import path, include
+# scheduler_app/urls.py
+
+from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('schedule/', views.schedule, name="schedule"),
+    path("login/schedule/", views.schedule, name="schedule"),
 ]
