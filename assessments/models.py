@@ -1,8 +1,6 @@
 from django.db import models
 from django import forms
 
-
-
 # Create your models here.
 class Answers(models.Model):
     question_id=models.CharField(max_length=10)
