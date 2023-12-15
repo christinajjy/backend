@@ -3,17 +3,19 @@ body{
 }
 /* Log in page essentials*/
 .side-bar{
-    position: fixed;
+    z-index: 1;
+    position: absolute;
     left: 0;
     top: 0;
     background-color: black;
     color: white;
     border-top-right-radius: 3%;
-    border-bottom-right-radius: 5%;
+    border-bottom-right-radius: 3%;
     height: 100%;
     padding: 20px;
     min-width: 20%;
     max-width: 30%;
+    margin-top: 30%;
 }
 .login-box{
     position: absolute;
@@ -118,4 +120,15 @@ h1{
 .icon{
     max-width:100%;
     height:auto;
+}
+
+/*Nav bar*/
+nav{
+    z-index: 2;
+}
+.navbar .navbar-nav .nav-item{
+    padding:15px;
+}
+.navbar .navbar-nav .nav-but{
+    padding:10px;
 }
