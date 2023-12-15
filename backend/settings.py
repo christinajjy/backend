@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "authentication",
     "resources",
     "schedule",
+    "IT_Person",
 ]
 
 MIDDLEWARE = [
