@@ -30,3 +30,6 @@ def signup(response):
 
     return render(response,"authentication/signup.html",{"form":form})
 
+def logoutPage(request):
+    logout(request)
+    return redirect('/')
