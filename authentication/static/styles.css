@@ -3,7 +3,7 @@ body{
 }
 /* Log in page essentials*/
 .side-bar{
-    z-index: 1;
+    z-index: -1;
     position: absolute;
     left: 0;
     top: 0;
@@ -14,8 +14,6 @@ body{
     height: 100%;
     padding: 20px;
     min-width: 20%;
-    max-width: 30%;
-    margin-top: 30%;
 }
 .login-box{
     position: absolute;
@@ -27,7 +25,7 @@ body{
     align-items: center;
     text-align: center;
 }
-button{
+.login-button{
     background-color: black;
     color: white;
     margin: auto;
@@ -72,6 +70,12 @@ label, input{
 a, #link-button{
     text-decoration: none;
     color: white;
+}
+form{
+    background-color: black;
+}
+buton{
+    background-color: #9c0505;
 }
 /* resources page essentials*/
 nav{
@@ -120,15 +124,4 @@ h1{
 .icon{
     max-width:100%;
     height:auto;
-}
-
-/*Nav bar*/
-nav{
-    z-index: 2;
-}
-.navbar .navbar-nav .nav-item{
-    padding:15px;
-}
-.navbar .navbar-nav .nav-but{
-    padding:10px;
 }
