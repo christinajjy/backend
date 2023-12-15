@@ -4,8 +4,8 @@
     <form>
       <label for="category">Select Email:</label>
       <select id="category" name="category" required>
-        {% for item in data_f %}
-        <option value="{{ item }}">Emails</option>
+        {% for item in phishing_emails %}
+        <option value="">{{ item }}</option>
         {% endfor %}
       </select>
       <label for="message">Message:</label>
