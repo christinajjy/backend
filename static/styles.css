@@ -1,0 +1,121 @@
+body{
+    background-color: #9c0505;
+}
+/* Log in page essentials*/
+.side-bar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: black;
+    color: white;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 5%;
+    height: 100%;
+    padding: 20px;
+    min-width: 20%;
+    max-width: 30%;
+}
+.login-box{
+    position: absolute;
+    background-color: #c2c1be;
+    margin-top: 8%;
+    margin-left: 55%;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+button{
+    background-color: black;
+    color: white;
+    margin: auto;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.login-info{
+    padding: 10px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+/* sign up page essentials*/
+.signup-box{
+    position: absolute;
+    background-color: #c2c1be;
+    margin-top: 5%;
+    margin-left: 38%;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    border: none;
+}
+.signup-info{
+    padding: 1em;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 20px;
+    font-weight: bold;
+    display: block;
+}
+label, input{
+    display: block;
+    padding: 1%;
+}
+a, #link-button{
+    text-decoration: none;
+    color: white;
+}
+/* resources page essentials*/
+nav{
+    background-color: black;
+    font-size: 20px;
+}
+#navbar{
+    position: fixed;
+    min-width: 10%;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    border-right: 2px solid white;
+}
+#navbar li{
+    padding-bottom: 20px;
+    left: 20px;
+    list-style: none;
+}
+.icon-page{
+    display: block;
+    position: absolute;
+    text-align: left;
+    margin-left: 23%;
+}
+.card{
+    position: relative;
+    background-color: black;
+    color: white;
+    max-width: 15em;
+    max-height: 20em;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+}
+h1{
+    color: white;
+}
+#news-info{
+    font-size: 14px;
+}
+#news-title{
+    font-size: 20px;
+}
+.icon{
+    max-width:100%;
+    height:auto;
+}

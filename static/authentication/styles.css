@@ -1,0 +1,185 @@
+body{
+    background-color: #9c0505;
+}
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    left: 0; 
+}
+.navbar a{
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+    border-bottom: 2px solid #9c0505;
+}
+.navbar-brand{
+    font: 'Times New Roman';
+    color: white;
+    padding-left: 2em;
+}
+.navbar-inline{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-ul {  
+    list-style-type: none;  
+    margin: 0;  
+    padding: 0px;  
+    overflow: hidden; 
+}  
+
+.navbar-li {  
+float: right;  
+}  
+
+.nav-link {  
+display: block;  
+color: blue;  
+font-size:20px;  
+text-align: center;  
+padding: 10px 20px;  
+text-decoration: none;  
+} 
+.logout{
+    background-color: #ddd;
+    border: none;
+    padding: 14px 16px;
+    border-radius: 5px;
+    bottom: 0;
+    margin-top: 0.25em;
+}
+
+/* Log in page essentials*/
+.side-bar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: black;
+    color: white;
+    border-top-right-radius: 3%;
+    height: 100%;
+    padding: 20px;
+    min-width: 20%;
+    max-width: 30%;
+}
+.login-box{
+    position: absolute;
+    background-color: #c2c1be;
+    margin-top: 8%;
+    margin-left: 55%;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+.login-button{
+    background-color: black;
+    color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+.login-info{
+    padding: 10px;
+    width: 80%;
+    border: transparent;
+    border-bottom: 2px solid black ;
+    margin: auto;
+    margin-bottom: 20px;
+    font-weight: bold;
+    outline: none;
+}
+/* sign up page essentials*/
+.form-container{
+    background-color: #c2c1be;
+    color: black;
+    border-radius: 10px;
+    margin-top: 10%;
+    padding: 20px;
+    max-width: 30%;
+    margin-left: 30%;
+}
+.form-group input{
+    padding: 10px;
+    width: 80%;
+    border: transparent;
+    border-bottom: 2px solid black ;
+    margin: auto;
+    margin-bottom: 10px;
+    font-weight: bold;
+    outline: none;
+}
+.form-group small{
+    display: block;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+.form-container button{
+    background-color: black;
+    color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: 43%;
+}
+/* resources page essentials*/
+.navbar-resources{
+    background-color: black;
+    font-size: 20px;
+}
+#navbar{
+    position: fixed;
+    min-width: 10%;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    border-right: 2px solid white;
+}
+#navbar li{
+    padding-bottom: 20px;
+    left: 20px;
+    list-style: none;
+}
+.icon-page{
+    display: block;
+    position: absolute;
+    text-align: left;
+    margin-left: 23%;
+}
+.card{
+    background-color: black;
+    color: white;
+    max-width: 15em;
+    height: auto;
+    max-height: 20em;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+}
+h1{
+    color: white;
+}
+#news-info{
+    font-size: 14px;
+}
+#news-title{
+    font-size: 20px;
+}
+.icon{
+    max-width:100%;
+    height:auto;
+}
