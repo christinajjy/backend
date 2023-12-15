@@ -2,7 +2,6 @@ from django.shortcuts import render,redirect
 from django.contrib.auth import authenticate,login,logout
 from django.contrib import messages
 from .forms import RegisterForm
-from . import views
 
 # Create your views here.
 def login_user(request):
@@ -12,13 +11,12 @@ def login_user(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('home')
+            return redirect('authentication/signup.html')
         else:
             messages.success(request,("there was an error logging in"))
-            return redirect('login')
+            return redirect('authentication/login.html')
     else:
-        return render(request, 'login.html', {})
-
+        return render(request, 'authentication/login.html', {})
 
 def signup(response):
     if response.method=="POST":
@@ -30,7 +28,5 @@ def signup(response):
     else:
         form=RegisterForm()
 
-    return render(response,"signup.html",{"form":form})
-
-
+    return render(response,"authentication/signup.html",{"form":form})
 
