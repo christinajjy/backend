@@ -1,4 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>home</h1>
+<h1>Home</h1>
+    <ul class="list-group">
+        {% for assessment_questions in assessment_questions %} 
+            <li class=list-group-item>
+                {{Quiz.question_id}}
+            </li>
+        {% endfor %}
+    </ul>
+        
 {% endblock content %}
