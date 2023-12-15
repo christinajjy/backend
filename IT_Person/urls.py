@@ -5,6 +5,6 @@ from . import views
 urlpatterns = [
     path('IT/login/', views.pemailinput, name="login"),
     path('IT/phish/',views.phish,name="phish"),
-    # path('phish/',views.dropdown,name="phish"),
+    #path('phish/',views.dropdown,name="phish"),
     path('IT/analytics/', views.analytics, name="analytics"),
 ]
