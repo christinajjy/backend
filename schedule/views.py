@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
 def schedule(request):
-    return render(request, 'schedule.html', {})
+    return render(request, 'cal.html', {})
