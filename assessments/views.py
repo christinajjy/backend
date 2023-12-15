@@ -1,10 +1,10 @@
 from django.shortcuts import render
 from .models import Quiz
-from .forms import QuestionForm
+#from .forms import QuestionForm
 
-def assessment(request):
+def assessments(request):
     assessment_questions = Quiz.objects.all()
     
-    return render(request,'assessment.html',{
+    return render(request,'assessments.html',{
         'assessment_questions': assessment_questions,
     })

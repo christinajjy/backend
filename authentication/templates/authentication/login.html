@@ -1,0 +1,37 @@
+{% extends "authentication/base.html" %}
+{% load static %}
+{% block title %}RansomAware Login{% endblock title %}
+{% block content %}
+<main>
+    <div class="side-bar">
+        <h1>RansomAware</h1>
+        <p>Provide training and preparedness for the 
+            employees to prevent future ransomware attacks against the 
+            company.</p>
+    </div>
+    <div class="login-box">
+        <h1>Log in</h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div>
+                <label for="username">Username:</label>
+                <input class="login-info" type="text"  name="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input class="login-info" type="password"  name="password" required>
+            </div>
+            <div>
+                <input class="login-button" type="submit" value="Login" href="authentication/signup.html">
+            </div>
+        </form>
+        <p>New user? Create an account. <a href="{% url 'signup' %}">Sign up</a>
+    </div>
+    
+    {% if messages %}
+        {% for message in messages %}
+            {{message}}
+        {% endfor %}
+    {%endif%}
+</main>
+{% endblock content %}
