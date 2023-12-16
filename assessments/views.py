@@ -18,12 +18,12 @@ def assessments(request):
 def result(request):
     if request.method == 'POST':
         print(request.POST)
-        questions=QuesModel.objects.all()
+        question=QuesModel.objects.all()
         score=0
         wrong=0
         correct=0
         total=0
-        for q in questions:
+        for q in question:
             total+=1
             print(request.POST.get(q.question))
             print(q.ans)
@@ -44,9 +44,9 @@ def result(request):
         }
         return render(request,'assessments/result.html',context)
     else:
-        questions=QuesModel.objects.all()
+        question=QuesModel.objects.all()
         context = {
-            'questions':questions
+            'question':question
         }
         return render(request,'assessments/assessments.html',context)
  

@@ -183,3 +183,17 @@ h1{
     max-width:100%;
     height:auto;
 }
+
+/* Assessment essentials */
+.container-quiz{
+    margin: 30%;
+    padding: 10%;
+}
+.card-columns{
+    padding: 10px; 
+    margin: 20px;
+}
+
+.form-group{
+    margin-top: 20%;
+}
