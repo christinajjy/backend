@@ -253,3 +253,8 @@ input{
 .container-result{
     margin: 20%;
 }
+.piechart{
+    width: 100px;
+    height: 100px;
+    border: 10px;
+}
