@@ -250,3 +250,6 @@ input[type='radio']:checked:before {
 input{
     margin: 10px;
 }
+.container-result{
+    margin: 20%;
+}

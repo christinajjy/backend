@@ -49,16 +49,3 @@ def result(request):
             'question':question
         }
         return render(request,'assessments/assessments.html',context)
- 
-def addQuestion(request):    
-    if request.user.is_staff:
-        form=addQuestionform()
-        if(request.method=='POST'):
-            form=addQuestionform(request.POST)
-            if(form.is_valid()):
-                form.save()
-                return redirect('/')
-        context={'form':form}
-        return render(request,'assessments/addQuestion.html',context)
-    else: 
-        return redirect('assessments/assessments.html')
