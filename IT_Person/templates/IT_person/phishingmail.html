@@ -1,18 +1,9 @@
 {% extends "IT_person/base.html" %}
 {% block content %}
-  <main>
-    <form>
-      <label for="category">Select Email:</label>
-      <select id="category" name="category" required>
-        {% for item in phishing_emails %}
-        <option value="">{{ item }}</option>
-        {% endfor %}
-      </select>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-  
-      <button type="submit">Send</button>
-    </form>
-  </main>
+<form action="" method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="Submit">
+</form>
 {% endblock content %}
 
