@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import QuesModel
+from .models import quiz1
 from django.shortcuts import redirect,render
 from django.contrib.auth import login,logout,authenticate
 from .forms import *
@@ -8,9 +8,9 @@ from django.http import HttpResponse
 
 
 def assessments(request):
-    assessment_questions = QuesModel.objects.all()
+    assessment_questions = quiz1.objects.all()
     
-    return render(request,'assessments.html',{
+    return render(request,'assessments/assessments.html',{
         'assessment_questions': assessment_questions,
     })
 
@@ -18,7 +18,7 @@ def assessments(request):
 def result(request):
     if request.method == 'POST':
         print(request.POST)
-        question=QuesModel.objects.all()
+        question=quiz1.objects.all()
         score=0
         wrong=0
         correct=0
@@ -26,9 +26,9 @@ def result(request):
         for q in question:
             total+=1
             print(request.POST.get(q.question))
-            print(q.ans)
+            print(q.answer_option)
             print()
-            if q.ans ==  request.POST.get(q.question):
+            if q.answer_option ==  request.POST.get(q.question):
                 score+=10
                 correct+=1
             else:
@@ -42,9 +42,9 @@ def result(request):
             'percent':percent,
             'total':total
         }
-        return render(request,'assessments/result.html',context)
+        return render(request,'assessments/results.html',context)
     else:
-        question=QuesModel.objects.all()
+        question=quiz1.objects.all()
         context = {
             'question':question
         }
@@ -61,4 +61,4 @@ def addQuestion(request):
         context={'form':form}
         return render(request,'assessments/addQuestion.html',context)
     else: 
-        return redirect('home')
+        return redirect('assessments/assessments.html')

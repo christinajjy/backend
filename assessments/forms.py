@@ -1,6 +1,6 @@
 from django.forms import ModelForm
 from .models import *
-from .models import QuesModel
+from .models import quiz1
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
  
@@ -11,5 +11,5 @@ class createuserform(UserCreationForm):
  
 class addQuestionform(ModelForm):
     class Meta:
-        model= QuesModel
+        model= quiz1
         fields="__all__"

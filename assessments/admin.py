@@ -1,6 +1,5 @@
 from django.contrib import admin
 from .models import *
-from .models import QuesModel
+from .models import quiz1
  
-# Register your models here.
-admin.site.register(QuesModel)
+admin.site.register(quiz1)

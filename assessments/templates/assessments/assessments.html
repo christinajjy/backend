@@ -1,4 +1,4 @@
-
+{% extends 'authentication/base.html' %}
  
 {% block content %}
 {% load static %}
@@ -7,9 +7,9 @@
  
 <div id="displaytimer"><b>Timer: 0 seconds</b></div>
  
- <form method='post' action=''>
+ <form method='post' action='/results/'>
     {% csrf_token %}
-    {% for q  in question%}
+    {% for q  in assessment_questions%}
     <div class="form-group">
       <label for="question">{{q.question}}</label>
     </div>
