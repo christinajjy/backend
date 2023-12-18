@@ -52,6 +52,5 @@ request.onload = function()
         console.error(error)
     }
     }
-    
     request.send()
     
