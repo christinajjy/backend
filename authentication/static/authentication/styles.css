@@ -183,3 +183,78 @@ h1{
     max-width:100%;
     height:auto;
 }
+
+/* Assessment essentials */
+.card-columns{
+    padding: 10px; 
+    margin: 20px;
+}
+
+.form-group{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.container-quiz{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.quiz-form{
+    margin: 2% 10% 2% 0;
+    background-color: #c2c1be;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 30px;
+}
+.btn{
+    background-color: black;
+    color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+input[type=text]{
+    background-color: #c2c1be;
+}
+input[type=text]:focus{
+    background-color: white;
+}
+input[type=radio]{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #9c0505;
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 0 0 5px #999;
+    transition: box-shadow 0.3s ease;
+}
+input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+}
+input[type='radio']:checked:before {
+    background: #9c0505;
+}
+#displaytimer{
+    color: white;
+}
+input{
+    margin: 10px;
+}
+.container-result{
+    margin: 20%;
+}
+.piechart{
+    width: 100px;
+    height: 100px;
+    border: 10px;
+}

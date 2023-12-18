@@ -8,15 +8,14 @@ class Answers(models.Model):
     def __str__(self):
         return self.question_id
 
-class Quiz(models.Model):
+class quiz1(models.Model):
     question_id = models.CharField(max_length=200)
     question=models.TextField(blank=True)
-    question_difficulty=models.CharField(max_length=200)
     option_A=models.CharField(max_length=200)
     option_B=models.CharField(max_length=200)
     option_C=models.CharField(max_length=200)
     option_D=models.CharField(max_length=200)
-    answers =models.ForeignKey(Answers,blank=True,null=True,on_delete=models.CASCADE)
+    answer_option=models.TextField(blank=True)
 
     def __str__(self):
         return self.question_id
