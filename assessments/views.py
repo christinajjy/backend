@@ -39,6 +39,8 @@ def result(request):
             else:
                 wrong+=1
         percent = 100 - (score/(total*10) *100)
+
+
         labels = ['Correct', 'Wrong']
         sizes = [correct, wrong]
         explode = (0.1, 0)  # explode 1st slice
@@ -53,6 +55,8 @@ def result(request):
         chart_buffer.seek(0)
         chart_data = base64.b64encode(chart_buffer.getvalue()).decode('utf-8')
         plt.close()
+
+
 
         context = {
             'score':score,
